@@ -3,7 +3,13 @@
 Blockchain-Based Bioinformatics Registry powered by Soroban Smart Contracts on Stellar.
 
 ---
+## Live Demo
 
+Frontend:
+
+https://bioproof.vercel.app/
+
+---
 ## Overview
 
 BioProof is a decentralized bioinformatics registry system designed to improve scientific reproducibility and transparency in computational biology research.
