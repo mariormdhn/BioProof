@@ -1,82 +1,215 @@
 # BioProof
 
-Blockchain-Based Bioinformatics Analysis Registry using Soroban Smart Contracts on Stellar.
+Blockchain-Based Bioinformatics Analysis Registry powered by Soroban Smart Contracts on Stellar.
 
 ---
 
-## Description
+## Overview
 
-BioProof is a simple decentralized application built using Soroban Smart Contracts on the Stellar blockchain.
+BioProof is a decentralized bioinformatics registry system designed to improve scientific reproducibility and transparency in computational biology research.
 
-The project stores metadata of bioinformatics analyses directly on-chain to support:
+This project combines:
 
-- scientific reproducibility
-- dataset provenance
-- transparent research workflows
+- Soroban Smart Contracts
+- Stellar Blockchain
+- Rust
+- Next.js
+- Tailwind CSS
 
-Each bioinformatics record contains:
-
-- dataset name
-- analysis type
-- dataset hash
-- researcher name
+to create a lightweight Web3 application for storing immutable bioinformatics metadata on-chain.
 
 ---
 
-## Contract ID
-CAT3CPHR4BAX2MJXIKY4LPAEFU65H7MSWMHVG2JGSLGP4SN5PQLCPN6D
+## Problem
+
+Bioinformatics research often faces issues such as:
+
+- irreproducible computational analyses
+- unclear dataset provenance
+- modified research outputs
+- lack of transparent verification systems
+
+BioProof aims to address these challenges using blockchain technology.
+
+---
 
 ## Features
 
-- Create bioinformatics records
-- Retrieve all records
-- Delete records by ID
-- Immutable blockchain storage
+### Smart Contract Features
+
+- Create Bioinformatics Records
+- Retrieve Stored Records
+- Delete Records
+- Immutable Blockchain Storage
+
+### Frontend Features
+
+- Modern Next.js frontend
+- Responsive UI
+- Scientific-themed design
+- Bioinformatics metadata form
+- Ready for Soroban integration
 
 ---
 
-## Smart Contract Functions
+## Example Record
 
-### create_record()
+A bioinformatics record may contain:
 
-Create a new bioinformatics analysis record.
+- Dataset Name
+- Analysis Type
+- Dataset Hash
+- Researcher Name
 
-### get_records()
+Example:
 
-Retrieve all stored records.
+```text
+Dataset: RNASeq_Liver_001
+Analysis: Differential Expression
+Hash: SHA256_HASH
+Researcher: Oiram
+```
 
-### delete_record()
+---
 
-Delete a record using its ID.
+## Project Structure
+
+```text
+BIOPROOF/
+│
+├── contracts/
+│   └── notes/
+│       └── src/lib.rs
+│
+├── frontend/
+│   ├── app/
+│   ├── public/
+│   ├── package.json
+│   └── ...
+│
+├── Cargo.toml
+└── README.md
+```
 
 ---
 
 ## Technology Stack
 
-- Stellar Blockchain
+### Blockchain
+
+- Stellar
 - Soroban SDK
+
+### Smart Contract
+
 - Rust
 
----
+### Frontend
 
-## Example Use Case
-
-A researcher stores metadata from an RNA-seq analysis:
-
-- dataset name
-- analysis type
-- SHA256 dataset hash
-
-The record becomes permanently verifiable on-chain.
+- Next.js
+- React
+- Tailwind CSS
 
 ---
 
-## Vision
+## Frontend Preview
 
-BioProof aims to explore how blockchain technology can support transparency and reproducibility in bioinformatics research.
+BioProof frontend provides:
+
+- elegant green-yellow scientific theme
+- responsive layout
+- blockchain-ready architecture
+
+Built for future integration with:
+
+- Freighter Wallet
+- Soroban RPC
+- Stellar Testnet
+
+---
+
+## Current Development Status
+
+### Completed
+
+- Soroban Smart Contract
+- GitHub Repository
+- Next.js Frontend
+- Tailwind UI
+- Local Development Setup
+
+### In Progress
+
+- Wallet Integration
+- Smart Contract Invocation
+- Blockchain Data Retrieval
+
+---
+
+## Future Scope
+
+- Freighter wallet authentication
+- Real blockchain transactions
+- IPFS integration
+- FASTQ hash generation
+- Bioinformatics workflow tracking
+- Decentralized scientific reproducibility system
+
+---
+
+## Getting Started
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev -- --webpack
+```
+
+Open:
+
+```text
+http://localhost:3000
+```
+
+---
+
+## Smart Contract
+
+Deploy using:
+
+- Soroban Studio
+- Stellar Testnet
+
+---
+
+## Inspiration
+
+BioProof explores the intersection of:
+
+- Bioinformatics
+- Blockchain
+- Decentralized Science (DeSci)
+- Scientific Reproducibility
 
 ---
 
 ## Author
 
-Mario - Built with Soroban Smart Contracts and Rust.
+Built by:
+
+Mario Rmdhn
+
+Using:
+
+- Soroban
+- Stellar
+- Rust
+- Next.js
+
+---
+
+# BioProof
+
+### Securing Scientific Reproducibility on the Blockchain
